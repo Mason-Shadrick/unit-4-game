@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--My css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <title>Sword Game!</title>
+  </head>
+
+  <!--Main container everything should be in-->
+<div class="container">
+    <!--first row with title-->
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Sword Game!</h1>
+        </div>
+    </div>
+    <!--second row with instructions-->
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Instructions:</h3>
+        </br>
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+        </br>
+            <p>Click on one of the four swords below to add to your score.</p>
+        </br>
+            <p>You win the game by matching your score to the random number chosen at the start of the game.</p>
+        </br>
+            <p>Each time the game starts the values of each sword is changed.</p>
+        </div>
+    </div>
+
+    <!--dynamically updated html sections-->  
+    
+    <!--third row-->
+    <div class="row">
+        <!--number to reach-->
+        <div class="col-md-6">
+            <p id="scoreToGet"></p>
+        </div>
+        <!--wins and losses-->
+        <div class="col-md-6">
+            <p id="wins">Wins:</p>
+        </br>
+            <p id="losses">Losses:</p>
+        </div>
+    </div>
+
+    <!--fourth row with pics of swords-->
+    <div class="row">
+        <div class="col-md-3" id="sword1">
+            <img src="assets/images/body-mind.jpg" alt="Sword of body and mind" class="img-responsive" width="100%">
+        </div>
+        <div class="col-md-3" id="sword2">
+            <img src="assets/images/feast-famine.jpg" alt="Sword of feast and famine" class="img-responsive" width="100%">
+        </div>
+        <div class="col-md-3" id="sword3">
+            <img src="assets/images/fire-and-ice.jpg" alt="Sword of fire and ice" class="img-responsive" width="100%">
+        </div>
+        <div class="col-md-3" id="sword4">
+            <img src="assets/images/light-shadow.jpg" alt="Sword of light and shadow" class="img-responsive" width="100%">
+        </div>
+    </div>
+
+    <!--fifth row with current score-->
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Your current score</h3>
+        </br>
+            <h4 id="count">0</h4>
+        </div>
+    </div>
+</div>
+
+</html>
