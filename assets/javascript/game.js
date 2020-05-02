@@ -36,7 +36,7 @@ function winner(){
     $("#wins").html("Wins: " + wins);
     reset()
 }
-
+//loser function
 function loser(){
     losses++;
     alert("Try harder next time!")
@@ -44,7 +44,7 @@ function loser(){
     reset()
 }
 
-
+//onclicks for each sword with if statements checking for wins and losses
 $("#sword1").on("click", function(){
     counter = counter + sword1;
     if (counter === targetNum){
