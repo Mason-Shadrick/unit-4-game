@@ -9,6 +9,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
     <!--My css-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <meta charset="UTF-8" />
@@ -18,13 +20,13 @@
   <!--Main container everything should be in-->
 <div class="container">
     <!--first row with title-->
-    <div class="row">
+    <div id="row1" class="row">
         <div class="col-md-12">
             <h1>Sword Game!</h1>
         </div>
     </div>
     <!--second row with instructions-->
-    <div class="row">
+    <div id="row2" class="row">
         <div class="col-md-12">
             <h3>Instructions:</h3>
         </br>
@@ -43,41 +45,41 @@
     <!--dynamically updated html sections-->  
     
     <!--third row-->
-    <div class="row">
+    <div id="row3" class="row">
         <!--number to reach-->
-        <div class="col-md-6">
-            <p id="scoreToGet"></p>
+        <div id="numScore" class="col-md-6">
+            <h3 id="scoreToGet"></h3>
         </div>
         <!--wins and losses-->
-        <div class="col-md-6">
-            <p id="wins">Wins:</p>
+        <div id="wAndl" class="col-md-6">
+            <h2 id="wins">Wins:</h2>
         </br>
-            <p id="losses">Losses:</p>
+            <h2 id="losses">Losses:</h2>
         </div>
     </div>
 
     <!--fourth row with pics of swords-->
-    <div class="row">
-        <div class="col-md-3" id="sword1">
+    <div id="swords" class="row">
+        <div class="col-md-3" class ="sword" id="sword1">
             <img src="assets/images/body-mind.jpg" alt="Sword of body and mind" class="img-responsive" width="100%">
         </div>
-        <div class="col-md-3" id="sword2">
+        <div class="col-md-3" class="sword" id="sword2">
             <img src="assets/images/feast-famine.jpg" alt="Sword of feast and famine" class="img-responsive" width="100%">
         </div>
-        <div class="col-md-3" id="sword3">
+        <div class="col-md-3" class="sword" id="sword3">
             <img src="assets/images/fire-and-ice.jpg" alt="Sword of fire and ice" class="img-responsive" width="100%">
         </div>
-        <div class="col-md-3" id="sword4">
+        <div class="col-md-3" class="sword" id="sword4">
             <img src="assets/images/light-shadow.jpg" alt="Sword of light and shadow" class="img-responsive" width="100%">
         </div>
     </div>
 
     <!--fifth row with current score-->
-    <div class="row">
+    <div id="row5" class="row">
         <div class="col-md-12">
             <h3>Your current score</h3>
         </br>
-            <h4 id="count">0</h4>
+            <h3 id="count">0</h3>
         </div>
     </div>
 </div>

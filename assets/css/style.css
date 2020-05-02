@@ -1,0 +1,34 @@
+body{
+    background: 
+  /* On "top" */
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #10001d  ,
+    #230c36 375px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #6e6d07 ,
+    #4f5227  );
+    font-family: 'MedievalSharp', cursive;
+    color: black;
+    font-weight: bold;
+}
+
+
+.row {
+    border: ridge;
+    border-color: steelblue;
+    border-radius: 3px;
+    background-color: firebrick;
+}
+
+#swords, #row2{
+    border-color: yellowgreen;
+    background-color: deepskyblue;
+    
+}
+
